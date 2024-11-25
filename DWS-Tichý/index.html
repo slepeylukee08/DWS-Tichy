@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Úkoly</title>
+</head>
+<body>
+    <h1>Úkoly</h1>
+    <div class="container">
+        <div class="ukol">
+            <h2>Úkol 1</h2>
+            <button id="first">Kliknuto</button>
+        </div>
+        <div class="ukol">
+            <h2>Úkol 2</h2>
+            <button id="second">Otevřeno</button>
+        </div>
+        <div class="ukol">
+            <h2>Úkol 3</h2>
+            <button id="third" onclick="showText()">Klikni na mě</button>
+        </div>
+        <div class="ukol">
+            <h2 id="ukolTitle">Úkol 4</h2>
+            <button id="fourth">Klikni na mě!</button>
+        </div>
+        <div class="ukol">
+            <h2>Úkol 5</h2>
+            <input type="text" id="nameInput" placeholder="Zadej své jméno" />
+            <button id="greetButton" onclick="greetUser()">Klikni na mě!</button>
+            <div id="greetingMessage" class="greeting"></div>
+        </div>
+        <div class="ukol">
+            <h2>Úkol 7</h2>
+            <button id="hoverButton">Najed na mě!</button>
+        </div>
+        <div class="ukol">
+            <h1>Úkol 8</h1>
+            <h1 id="currentTime"></h1>
+            <button id="updateButton">Aktualizovat čas</button>
+        </div>
+        <div class="ukol">
+            <h1>Úkol 9</h1>
+            <button onclick="zobrazDatum()">Zobraz aktuální datum</button>
+            <p id="datum"></p>
+        <div class="ukol">
+            <h1>Úkol 10</h1> 
+            <h1>Přičítej k číslu 3</h1>
+            <label for="cislo">Zadej číslo:</label>
+            <input type="number" id="cislo" />
+            <button onclick="pridatTri()">Spočítat</button>
+            <p id="vysledek"></p>
+        </div>
+        <div class="ukol">
+            <h1>Úkol 11</h1>
+            <h1>Sečti dvě čísla</h1>
+            <label for="cislo1">Zadej první číslo:</label>
+            <input type="number" id="cislo1" />
+            <br>
+            <label for="cislo2">Zadej druhé číslo:</label>
+            <input type="number" id="cislo2" />
+            <br>
+            <button onclick="sectiCisla()">Spočítat</button>
+            <p id="vysledek2"></p>
+        </div>
+        <div class="ukol">
+            <h1>Úkol 12</h1>
+            <h1>Obrázek se zvětší po najetí myší</h1>
+            <div class="obrazek-container">
+                <img src="obrazek zvetseni.jpg" alt="Popis obrázku" class="zoom-image" />
+            </div>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
